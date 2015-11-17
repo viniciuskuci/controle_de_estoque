@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $title?></title>
-    <link type="text/css" href="/template/style/app.css" />
+    <link type="text/css" rel="stylesheet" href="/template/style/app.css" />
     
 </head>
 <body>
