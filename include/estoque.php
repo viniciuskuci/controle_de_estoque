@@ -35,10 +35,20 @@ function salvar(){
             }
 }
 function excluir(){
+    if(isset($_GET['excluir'])){
+    $id = $_GET['excluir']; 
     $SQL = "DELETE FROM `produtos` WHERE `id`=:id";
     $preparo = conexao()->prepare($SQL);
-    $preparo->bindValue(":id", $_GET['excluir']);
+    $preparo->bindValue(":id", $id);
     $preparo->execute();
+    if($preparo->rowCount() == 1){
+        echo 'Sucesso!';
+        
+    }
+    else{
+        echo 'Erro!';
+    }
+}
 }
 function listar(){
     $SQL = "SELECT * FROM produtos WHERE 1;";

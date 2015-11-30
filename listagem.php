@@ -4,7 +4,7 @@
          include './include/estoque.php';
          $title = "Controle de Estoque";
          include './template/header.php';
-         
+         excluir();
         ?>
 <html>
     <head>
@@ -25,7 +25,7 @@
             </tr>
                 <?php
         listar();
-        excluir();
+        
     
         ?>
         </table>
