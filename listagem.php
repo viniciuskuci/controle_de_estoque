@@ -5,6 +5,7 @@
          $title = "Controle de Estoque";
          include './template/header.php';
          excluir();
+         editar();
         ?>
 <html>
     <head>
@@ -15,6 +16,7 @@
         <div cass="center">
             <table style="width: 100%;">
                 <tr style="background: #ccc;">
+                 <th></th>
                  <th></th>
                 <th>Id:</th>
                 <th>Nome:</th>
