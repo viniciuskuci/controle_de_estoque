@@ -7,6 +7,7 @@
         ?>
 
 <?php salvar(); ?>
+<a href="listagem.php">Ver Lista</a>
 <center>
 <form method="post">
     <div class="center">

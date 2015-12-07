@@ -13,6 +13,7 @@
         <title></title>
     </head>
     <body>
+        <a href="index.php">Voltar ao Cadastro</a>
         <div cass="center">
             <table style="width: 100%;">
                 <tr style="background: #ccc;">

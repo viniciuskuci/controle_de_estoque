@@ -84,27 +84,28 @@ function editar(){
 
                                 <label>
                                     Nome:
+                                    <br/>
                                     <input type="text" value="<?= $linha['nome'] ?>" name="nome"/>
                                 </label>
                             </div>
                             <div class="small-12 medium-12 large-12 columns">
 
                                 <label>
-                                    Valor:
+                                    Valor:<br/>
                                     <input type="text" value="<?= $linha['valor'] ?>" name="valor"/>
                                 </label>
                             </div>
                             <div class="small-12 medium-12 large-12 columns">
 
                                 <label>
-                                    Quantidade:
+                                    Quantidade:<br/>
                                     <input type="text" value="<?= $linha['quantidade'] ?>" name="quantidade"/>
                                 </label>
                             </div>
                             <div class="small-12 medium-12 large-12 columns">
 
                                 <label>
-                                    Validade:
+                                    Validade:<br/>
                                     <input type="text" value="<?= $linha['validade'] ?>" name="validade"/>
                                 </label>
                             </div>
@@ -125,7 +126,7 @@ function editar(){
 
             }
     if (isset($_POST['editenviar'])) {
-                $sqeditar = "UPDATE `produtos` SET  `nome`=:nome,`valor`=:valor,`quantidade`=:quantidade,`tipo`=:tipo WHERE `id`=:id;";
+                $sqeditar = "UPDATE `produtos` SET  `nome`=:nome,`valor`=:valor,`quantidade`=:quantidade,`validade`=:validade WHERE `id`=:id;";
                 $prepare = conexao()->prepare($sqeditar);
                 $prepare->bindValue(":id", $_POST['editar']);
                 $prepare->bindValue(":nome", $_POST['nome']);
